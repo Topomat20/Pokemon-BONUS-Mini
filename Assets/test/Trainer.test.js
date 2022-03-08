@@ -1,12 +1,5 @@
-const Trainer = require("../lib/Trainer");
-class Trainer {
-  constructor(name, hp, atk, level){
-    this.name = name;
-    this.hp = hp;
-    this.atk = atk;
-    this.level = level;
-  }
-}
+const Trainer = require("../trainer");
+
 describe("Trainer class", () => {
   it("should create a new trainer with a name property",()=>{
     expect(new Trainer("Joe").name).toBe("Joe")
@@ -31,5 +24,3 @@ describe("Trainer class", () => {
     });
   });
 });
-
-module.exports = Trainer;
